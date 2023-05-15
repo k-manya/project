@@ -9,4 +9,4 @@ RUN unzip fregg.zip
 RUN cp -rvf fregg/* .
 RUN rm -rf fregg fregg.zip
 CMD ["usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
